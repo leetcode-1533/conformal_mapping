@@ -2,13 +2,10 @@ function gradual_color(x)
 xgrid = -2:0.01:2;
 ygrid = -2:0.01:2;
 [X,Y] = meshgrid(xgrid,ygrid);
-N = 1000;
-% x = sin((1:N)/100);
-y = cos((1:N)/100);
-% z = (1:N)/100+randn(1,N);
+
 z = ones([1,length(X(:,x))]);
 
-col = gen_col(z);
+col = gen_col(x/length(xgrid),z);
 test(:,1,:) = col(:,:);
 test(:,2,:) = col(:,:);
 h = surface(...
