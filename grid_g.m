@@ -14,7 +14,9 @@ for x = 1:length(xgrid)
     
     subplot(2,1,1)
     hold on;
-    plot(X(:,x),Y(:,x),'Color',color(x,:))
+    plot(X(:,x),Y(:,x),'Color',color(x,:));
+    
+    
     subplot(2,1,2)
     hold on;
     axis off
