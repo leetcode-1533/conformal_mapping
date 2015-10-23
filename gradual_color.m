@@ -1,5 +1,6 @@
-function gradual_color(x)
-xgrid = -2:0.01:2;
+function gradual_color(fi,x)
+figure(fi);
+xgrid = -0.5*pi:0.005*pi:0.5*pi;
 ygrid = -2:0.01:2;
 [X,Y] = meshgrid(xgrid,ygrid);
 
