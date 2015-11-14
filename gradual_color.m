@@ -21,7 +21,7 @@ h = surface(...
   'LineWidth',2);
 
 Z = X(:,x)+1i*Y(:,x);
-tz = sin(Z);
+tz = sin(Z).^6;
 subplot(2,1,2)
 
 h = surface(...
